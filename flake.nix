@@ -56,9 +56,10 @@
             hello
           '';
 
-          enterTest = "
+          enterTest = ''
+            echo "testing....."
             exit 1
-          ";
+          '';
 
           processes.hello.exec = "hello";
         };
